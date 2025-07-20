@@ -1,0 +1,309 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>URLs - URL Manager</title>-->
+<!--    <script src="https://cdn.tailwindcss.com"></script>-->
+<!--    <link rel="stylesheet" href="/css/styles.css">-->
+<!--</head>-->
+<!--<body class="bg-gray-100 font-sans">-->
+<!--<nav class="bg-blue-600 text-white p-4">-->
+<!--    <div class="container mx-auto flex justify-between items-center">-->
+<!--        <h1 class="text-2xl font-bold">URL Manager</h1>-->
+<!--        <div>-->
+<!--            <a href="/index.html" class="px-4 hover:underline">Home</a>-->
+<!--            <a href="/register.html" class="px-4 hover:underline">Register</a>-->
+<!--            <a href="/login.html" class="px-4 hover:underline">Login</a>-->
+<!--            <a href="/urls.html" class="px-4 hover:underline">URLs</a>-->
+<!--            <a href="/profile.html" class="px-4 hover:underline">Profile</a>-->
+<!--            <button id="logoutBtn" class="px-4 hover:underline hidden">Logout</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+<!--<div class="container mx-auto p-6">-->
+<!--    <h2 class="text-3xl font-bold mb подобных-->
+
+<!--        <div class="bg-white p-6 rounded-lg shadow-md max-w-md mb-6">-->
+<!--    <h3 class="text-xl font-bold mb-4">Add New URL</h3>-->
+<!--    <form id="urlForm">-->
+<!--        <div class="mb-4">-->
+<!--            <label class="block text-gray-700">URL Name</label>-->
+<!--            <input type="text" id="url_name" class="w-full p-2 border rounded" required>-->
+<!--        </div>-->
+<!--        <div class="mb-4">-->
+<!--            <label class="block text-gray-700">URL Category</label>-->
+<!--            <input type="text" id="url_category" class="w-full p-2 border rounded" required>-->
+<!--        </div>-->
+<!--        <div class="mb-4">-->
+<!--            <label class="block text-gray-700">URL Description</label>-->
+<!--            <input type="text" id="url_description" class="w-full p-2 border rounded" required>-->
+<!--        </div>-->
+<!--        <div class="mb-4">-->
+<!--            <label class="block text-gray-700">URL Link</label>-->
+<!--            <input type="url" id="url_link" class="w-full p-2 border rounded" required>-->
+<!--        </div>-->
+<!--        <button type="submit" class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Add URL</button>-->
+<!--    </form>-->
+<!--</div>-->
+<!--<h3 class="text-xl font-bold mb-4">Your URLs</h3>-->
+<!--<div id="urlList" class="space-y-4"></div>-->
+<!--</div>-->
+<!--<script src="/js/app.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+<!--    <title>My URLs</title>-->
+<!--    <script src="https://cdn.tailwindcss.com"></script>-->
+<!--    <link rel="stylesheet" href="css/styles.css" />-->
+<!--</head>-->
+<!--<body class="bg-gray-100 font-sans">-->
+<!--<nav class="bg-blue-600 text-white p-4">-->
+<!--    <div class="container mx-auto flex justify-between items-center">-->
+<!--        <h1 class="text-2xl font-bold">URL Manager</h1>-->
+<!--        <div>-->
+<!--            <a href="index.html" class="px-4 hover:underline">Home</a>-->
+<!--            <a href="register.html" class="px-4 hover:underline">Register</a>-->
+<!--            <a href="login.html" class="px-4 hover:underline">Login</a>-->
+<!--            <a href="urls.html" class="px-4 hover:underline">URLs</a>-->
+<!--            <a href="profile.html" class="px-4 hover:underline">Profile</a>-->
+<!--            <button id="logoutBtn" class="px-4 hover:underline hidden">Logout</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+<!--<div class="container mx-auto p-6">-->
+<!--    <h2 class="text-3xl font-bold mb-6">Add URL</h2>-->
+<!--    <div class="bg-white p-6 rounded-lg shadow-md max-w-md mb-6">-->
+<!--        <form id="urlForm">-->
+<!--            <div class="mb-4">-->
+<!--                <label class="block text-gray-700">URL Name</label>-->
+<!--                <input type="text" id="url_name" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-4">-->
+<!--                <label class="block text-gray-700">Category</label>-->
+<!--                <input type="text" id="url_category" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-4">-->
+<!--                <label class="block text-gray-700">Description</label>-->
+<!--                <input type="text" id="url_description" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-4">-->
+<!--                <label class="block text-gray-700">Link</label>-->
+<!--                <input type="url" id="url_link" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <button type="submit" class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Add URL</button>-->
+<!--        </form>-->
+<!--        <p id="urlMessage" class="mt-4 text-red-500 hidden"></p>-->
+<!--    </div>-->
+
+<!--    <h3 class="text-2xl font-bold mb-4">Your URLs</h3>-->
+<!--    <div id="urlList" class="space-y-4"></div>-->
+<!--</div>-->
+<!--<script src="js/app.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash; ✅ urls.html &ndash;&gt;-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+<!--    <title>My URLs</title>-->
+<!--    <script src="https://cdn.tailwindcss.com"></script>-->
+<!--    <link rel="stylesheet" href="css/styles.css" />-->
+<!--</head>-->
+<!--<body class="bg-gray-100 font-sans">-->
+<!--<nav class="bg-blue-600 text-white p-4">-->
+<!--    <div class="container mx-auto flex justify-between items-center">-->
+<!--        <h1 class="text-2xl font-bold">URL Manager</h1>-->
+<!--        <div>-->
+<!--            <a href="index.html" class="px-4 hover:underline">Home</a>-->
+<!--            <a href="register.html" class="px-4 hover:underline">Register</a>-->
+<!--            <a href="login.html" class="px-4 hover:underline">Login</a>-->
+<!--            <a href="urls.html" class="px-4 hover:underline">URLs</a>-->
+<!--            <a href="profile.html" class="px-4 hover:underline">Profile</a>-->
+<!--            <button id="logoutBtn" class="px-4 hover:underline hidden">Logout</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<!--&lt;!&ndash; Add URL Form &ndash;&gt;-->
+<!--<div class="container mx-auto p-6">-->
+<!--    <h2 class="text-3xl font-bold mb-6">Add URL</h2>-->
+<!--    <div class="bg-white p-6 rounded-lg shadow-md max-w-md mb-6">-->
+<!--        <form id="urlForm">-->
+<!--            <div class="mb-4">-->
+<!--                <label class="block text-gray-700">URL Name</label>-->
+<!--                <input type="text" id="url_name" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-4">-->
+<!--                <label class="block text-gray-700">Category</label>-->
+<!--                <input type="text" id="url_category" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-4">-->
+<!--                <label class="block text-gray-700">Description</label>-->
+<!--                <input type="text" id="url_description" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-4">-->
+<!--                <label class="block text-gray-700">Link</label>-->
+<!--                <input type="url" id="url_link" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <button type="submit" class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Add URL</button>-->
+<!--        </form>-->
+<!--        <p id="urlMessage" class="mt-4 text-red-500 hidden"></p>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Display List &ndash;&gt;-->
+<!--    <h3 class="text-2xl font-bold mb-4">Your URLs</h3>-->
+<!--    <div id="urlList" class="space-y-4"></div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; ✅ Edit Modal for URL &ndash;&gt;-->
+<!--<div id="editModal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 z-50">-->
+<!--    <div class="bg-white p-6 rounded shadow-lg max-w-md w-full">-->
+<!--        <h2 class="text-xl font-bold mb-4">Edit URL</h2>-->
+<!--        <form id="editUrlForm">-->
+<!--            <input type="hidden" id="edit_url_id" />-->
+<!--            <div class="mb-3">-->
+<!--                <label class="block">Name</label>-->
+<!--                <input type="text" id="edit_url_name" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-3">-->
+<!--                <label class="block">Category</label>-->
+<!--                <input type="text" id="edit_url_category" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-3">-->
+<!--                <label class="block">Description</label>-->
+<!--                <input type="text" id="edit_url_description" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="mb-3">-->
+<!--                <label class="block">Link</label>-->
+<!--                <input type="url" id="edit_url_link" class="w-full p-2 border rounded" required />-->
+<!--            </div>-->
+<!--            <div class="flex justify-between mt-4">-->
+<!--                <button type="button" id="cancelEditBtn" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>-->
+<!--                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Update</button>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<script src="js/app.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My URLs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+<!-- ✅ Navbar -->
+<nav class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">URL Manager</h1>
+        <div>
+            <a href="index.html" class="px-4 hover:underline">Home</a>
+            <a href="register.html" class="px-4 hover:underline">Register</a>
+            <a href="login.html" class="px-4 hover:underline">Login</a>
+            <a href="urls.html" class="px-4 hover:underline">URLs</a>
+            <a href="profile.html" class="px-4 hover:underline">Profile</a>
+            <button id="logoutBtn" class="px-4 hover:underline hidden">Logout</button>
+        </div>
+    </div>
+</nav>
+
+<!-- ✅ Add URL Form -->
+<div class="container mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-6">Add URL</h2>
+    <div class="bg-white p-6 rounded-lg shadow-md max-w-md mb-6">
+        <form id="urlForm">
+            <div class="mb-4">
+                <label class="block text-gray-700">URL Name</label>
+                <input type="text" id="url_name" class="w-full p-2 border rounded" required />
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Category</label>
+                <input type="text" id="url_category" class="w-full p-2 border rounded" required />
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Description</label>
+                <input type="text" id="url_description" class="w-full p-2 border rounded" required />
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Link</label>
+                <input type="url" id="url_link" class="w-full p-2 border rounded" required />
+            </div>
+            <button type="submit" class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Add URL</button>
+        </form>
+        <p id="urlMessage" class="mt-4 text-red-500 hidden"></p>
+    </div>
+
+    <!-- ✅ URL List -->
+    <h3 class="text-2xl font-bold mb-4">Your URLs</h3>
+    <div id="urlList" class="space-y-4"></div>
+</div>
+
+<!-- ✅ Edit URL Modal -->
+<div id="editModal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 z-50">
+    <div class="bg-white p-6 rounded shadow-lg max-w-md w-full">
+        <h2 class="text-xl font-bold mb-4">Edit URL</h2>
+        <form id="editUrlForm">
+            <input type="hidden" id="edit_url_id" />
+            <div class="mb-3">
+                <label class="block">Name</label>
+                <input type="text" id="edit_url_name" class="w-full p-2 border rounded" required />
+            </div>
+            <div class="mb-3">
+                <label class="block">Category</label>
+                <input type="text" id="edit_url_category" class="w-full p-2 border rounded" required />
+            </div>
+            <div class="mb-3">
+                <label class="block">Description</label>
+                <input type="text" id="edit_url_description" class="w-full p-2 border rounded" required />
+            </div>
+            <div class="mb-3">
+                <label class="block">Link</label>
+                <input type="url" id="edit_url_link" class="w-full p-2 border rounded" required />
+            </div>
+            <div class="flex justify-between mt-4">
+                <button type="button" id="cancelEditBtn" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- ✅ JS Script -->
+<script src="js/app.js"></script>
+</body>
+</html>
